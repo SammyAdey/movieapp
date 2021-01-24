@@ -28,6 +28,22 @@
   color: #61dafb;
 }
 
+.Body {
+  display: flex;
+  color: white;
+  background: #080027;
+  width: 100%;
+  height: 100%;
+}
+
+.LogIn {
+  display: ;
+}
+
+/* main {
+  background: #080027;
+} */
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
