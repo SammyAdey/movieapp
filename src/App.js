@@ -6,7 +6,7 @@ function App() {
   const apiurl = "http://www.omdbapi.com/?apikey=a8f1cd5";
     return (
       <div className="Body">
-          <header>
+          <header className="header">
               <Nav />
           </header>
           <main>

@@ -29,15 +29,42 @@
 }
 
 .Body {
-  display: flex;
   color: white;
   background: #080027;
   width: 100%;
   height: 100%;
 }
 
+.header {
+  width: 100%;
+}
+
 .LogIn {
-  display: ;
+  font-size: 12px;
+  display: inline-block;
+  text-transform: uppercase;
+  background: #6c54c1;
+  padding: 8px 40px 8px 40px;
+  border-radius: 100px;
+  opacity: 0.8;
+}
+
+.Logo {
+  /* width: 5%; */
+  height: 40px;
+}
+
+.NavBar {
+  width: 100%;
+  display: block;
+}
+
+.NavBar-Inner {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  background: blue;
 }
 
 /* main {
