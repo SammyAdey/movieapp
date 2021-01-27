@@ -1,20 +1,19 @@
 import React from 'react';
-import Movie from  './component/movies.js';
 
-function App() {
-    // const movies = ['1', '2', '3'];
+const Movies = (props) => {
 
     return (
-        <div className="App">
-            <header>
-                <nav/>
-            </header>
-            <main>
-                
-
-            </main>
-        </div>
+        <div className="moviesList">
+            <div></div>
+                {props.movies.map((movie, index) => (
+                <div>
+                    <img src={movie.Poster} alt='movie'></img>
+                </div>
+                ))}
+            </div>
     )
 
 
 }
+
+export default Movies; 
