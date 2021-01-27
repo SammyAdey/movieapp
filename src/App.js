@@ -12,7 +12,7 @@ function App() {
           <main>
             <slider />
             <div>
-              <p>This is correct</p>
+              
             </div>
           </main>
       </div>

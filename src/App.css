@@ -1,3 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  background-image: linear-gradient(to right, #000000, #080027);
+}
+
 .App {
   text-align: center;
 }
@@ -28,34 +43,13 @@
   color: #61dafb;
 }
 
-.Body {
-  color: white;
-  background: #080027;
-  width: 100%;
-  height: 100%;
-}
-
 .header {
   width: 100%;
 }
 
-.LogIn {
-  font-size: 12px;
-  display: inline-block;
-  text-transform: uppercase;
-  background: #6c54c1;
-  padding: 8px 40px 8px 40px;
-  border-radius: 100px;
-  opacity: 0.8;
-}
-
-.Logo {
-  /* width: 5%; */
-  height: 40px;
-}
-
 .NavBar {
   width: 100%;
+  margin-top: 40px;
   display: block;
 }
 
@@ -64,12 +58,67 @@
   display: flex;
   justify-content: space-between;
   margin: auto;
-  background: blue;
+  /* background: blue; */
 }
 
-/* main {
-  background: #080027;
-} */
+.Logo {
+  /* width: 5%; */
+  height: 40px;
+}
+
+.menuRight {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+}
+
+.searchbox-wrap {
+  display: flex;
+  align-items: center;
+  width: 60%;
+}
+
+.searchBox {
+  width: 100%;
+  padding: 10px 20px;
+  margin-top: 0px;
+  height: 40px;
+  border-radius: 30px;
+  outline: 0;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  border: 0;
+  color: #fff;
+  font-size: 12px;
+}
+
+.searchBox::placeholder {
+  color: white;
+  font-size: 12px;
+  font-weight: 100;
+}
+
+.searchIcon {
+  position: relative;
+  left: -30px;
+  z-index: 30;
+}
+
+.LogIn {
+  font-size: 10px;
+  align-items: center;
+  display: inline-block;
+  text-transform: uppercase;
+  background: rgba(108, 84, 193, 0.6);
+  padding: 13px 50px 13px 50px;
+  border-radius: 100px;
+  backdrop-filter: blur(25px);
+}
+
+.menuIcon {
+  font-size: 50px;
+}
 
 @keyframes App-logo-spin {
   from {
