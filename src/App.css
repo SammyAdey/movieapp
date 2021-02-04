@@ -131,23 +131,24 @@ body {
 .moviesList {
   display: flex;
   flex-wrap: wrap;
+  margin: auto;
   overflow: auto;
   justify-content: flex-start;
-  background-color: #61dafb;
 }
 
 .moviePoster {
-  margin: 1rem;
-  width: 250px;
-  height: 350px;
+  margin: 0.5rem;
+  width: 19%;
+  height: 450px;
   overflow: hidden;
-  background-color: #fff;
+  background-color: #111;
 }
 
 .moviePoster img {
   /* border-radius: 30px; */
   width: 100%;
-  height: 350px;
+  /* height: 450px; */
+  object-fit: contain;
 }
 
 @keyframes App-logo-spin {
