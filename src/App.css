@@ -13,6 +13,11 @@ body {
   background-image: linear-gradient(to right, #000000, #080027);
 }
 
+/* .bodyContainer {
+  margin-bottom: 200px;
+  height: 200px;
+} */
+
 .App {
   text-align: center;
 }
@@ -130,24 +135,54 @@ body {
 
 .moviesList {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   margin: auto;
-  overflow: auto;
-  justify-content: flex-start;
+  overflow: none;
+  justify-content: center;
 }
 
 .moviePoster {
   margin: 0.5rem;
-  width: 19%;
-  height: 450px;
+  z-index: 10;
   overflow: hidden;
   background-color: #111;
 }
 
+.movieItem {
+  margin: 0.5rem;
+  width: 19%;
+  background-color: #111;
+}
+
+.movieItem h1 {
+  font-size: 15px;
+  width: 80%;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.movieInfo {
+  margin: 0.5rem;
+  z-index: 100;
+  height: 450px;
+  width: 100%;
+  background-color: #blue;
+  opacity: 1;
+}
+
+.movieInfoBottom {
+  background-image: linear-gradient(to right, #6c54c1, #5033b9);
+  padding: 30px, 0px;
+  color: #fff;
+  width: 100%;
+  opacity: 1;
+}
+
 .moviePoster img {
   /* border-radius: 30px; */
-  width: 100%;
-  /* height: 450px; */
+  height: 450px;
   object-fit: contain;
 }
 

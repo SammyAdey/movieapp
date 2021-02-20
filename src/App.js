@@ -25,13 +25,14 @@ function App() {
 
   return (
     <div className='Body'>
+      <div className='bodyContainer'>
+
       <header className='header'>
         <div className='NavBar'>
           <div className='NavBar-Inner'>
             <div className='Logo'>
               <img className='Logo' src={Logo} />
             </div>
-            {/* <Search /> */}
             <div className='menuRight'>
               <Search
                 searchValue={searchValue}
@@ -45,6 +46,7 @@ function App() {
           </div>
         </div>
       </header>
+
       <main>
         <slider />
         <div className='movieSection'>
@@ -52,6 +54,7 @@ function App() {
           {console.log(movies)}
         </div>
       </main>
+    </div>
     </div>
   );
 }
