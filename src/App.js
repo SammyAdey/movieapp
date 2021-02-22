@@ -4,6 +4,7 @@ import Movies from "./components/movies";
 import Logo from "./assets/movie-logo.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import Search from "./components/search";
+import AccessAlarmIcon from '@material-ui/icons/AccessAlarm';
 
 function App() {
   const [movies, setMovies] = useState([]);

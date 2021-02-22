@@ -13,11 +13,6 @@ body {
   background-image: linear-gradient(to right, #000000, #080027);
 }
 
-/* .bodyContainer {
-  margin-bottom: 200px;
-  height: 200px;
-} */
-
 .App {
   text-align: center;
 }
@@ -55,9 +50,11 @@ body {
 } */
 
 .NavBar {
+  z-index: 1000;
   width: 100%;
   margin-top: 40px;
   display: block;
+  position: fixed;
 }
 
 .NavBar-Inner {
@@ -120,7 +117,7 @@ body {
   background: rgba(108, 84, 193, 0.6);
   padding: 13px 50px 13px 50px;
   border-radius: 100px;
-  backdrop-filter: blur(25px);
+  backdrop-filter: blur(5px);
 }
 
 .menuIcon {
@@ -131,6 +128,7 @@ body {
   width: 85%;
   margin: auto;
   padding-top: 150px;
+  margin-bottom: 100px;
 }
 
 .moviesList {
@@ -143,7 +141,8 @@ body {
 }
 
 .moviePoster {
-  margin: 0.5rem;
+  border-radius: 30px;
+  height: 450px;
   z-index: 10;
   overflow: hidden;
   background-color: #111;
@@ -151,39 +150,78 @@ body {
 
 .movieItem {
   margin: 0.5rem;
+  height: 450px;
+  overflow: hidden;
+  border-radius: 30px;
   width: 19%;
   background-color: #111;
 }
 
 .movieItem h1 {
-  font-size: 15px;
+  font-size: 14px;
   width: 80%;
   color: #fff;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
 }
 
+.movieInfoSubtitle {
+  margin-top: 5px;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.movieItem p {
+  font-size: 10px;
+  width: 80%;
+  letter-spacing: 1px;
+  color: #fff;
+  font-weight: 300;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 1s;
+}
+
 .movieInfo {
-  margin: 0.5rem;
+  display: none;
+}
+
+.movieItem:hover > .movieInfo {
+  display: block;
+  transform: translateY(-450px);
+}
+
+.movieInfo {
   z-index: 100;
   height: 450px;
-  width: 100%;
-  background-color: #blue;
-  opacity: 1;
+  border-radius: 30px;
+  background: rgba(0, 0, 0, 0.1);
+  transform: translateY(0px);
+  transition: 1s;
+  cursor: pointer;
+  backdrop-filter: blur(5px);
 }
 
 .movieInfoBottom {
-  background-image: linear-gradient(to right, #6c54c1, #5033b9);
-  padding: 30px, 0px;
-  color: #fff;
+  padding: 10px 20px 20px 20px;
+  position: absolute;
   width: 100%;
-  opacity: 1;
+  bottom: 0;
+  background-image: linear-gradient(
+    to right,
+    rgba(108, 84, 193, 0.8),
+    rgba(80, 51, 185, 0.8)
+  );
+  padding: 100px, 0px;
+  color: #fff;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 
 .moviePoster img {
-  /* border-radius: 30px; */
-  height: 450px;
-  object-fit: contain;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 @keyframes App-logo-spin {

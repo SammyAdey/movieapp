@@ -13,7 +13,7 @@ const Movies = (props) => {
                 <div className="movieInfo">
                     <div className="movieInfoBottom">
                         <h1>{movie.Title}</h1>
-                        <p>{movie.Time}</p>
+                        <div className="movieInfoSubtitle"><p>{movie.Year} <span> | </span> {movie.Type}</p></div>
                     </div>
                     
 
